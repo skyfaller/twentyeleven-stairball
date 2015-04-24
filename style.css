@@ -1,9 +1,9 @@
 /*
 Theme Name:     Twenty Eleven Skyfaller
-Theme URI:      http: //example.com/
+Theme URI:      http://example.com/
 Description:    Child theme of Twenty Eleven for Skyfaller.net
 Author:         Nelson Pavlosky
-Author URI:     http: //skyfaller.net
+Author URI:     http://skyfaller.net
 Template:       twentyeleven
 Version:        0.0.1
 */
@@ -18,31 +18,68 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 */
 
 @font-face {
-	font-family: 'OrbitronMedium';
-	src: url('./fonts/Orbitron/EOT/orbitron-medium.eot');
-	src: url('./fonts/Orbitron/EOT/orbitron-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('./fonts/Orbitron/OTF/orbitron-medium.otf') format('opentype'),
-	     url('./fonts/Orbitron/orbitron-medium-webfont.woff') format('woff'),
-	     url('./fonts/Orbitron/TTF/orbitron-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('./fonts/Orbitron/orbitron-medium-webfont.svg#OrbitronMedium') format('svg');
+	font-family: 'Chunk';
+	src: url('./fonts/Chunk/Chunkfive-webfont.eot');
+	src: url('./fonts/Chunk/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./fonts/Chunk/Chunk.otf') format('opentype'),
+	     url('./fonts/Chunk/Chunkfive-webfont.woff') format('woff'),
+	     url('./fonts/Chunk/Chunkfive-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('./fonts/Chunk/Chunkfive-webfont.svg#Chunk') format('svg');
 	}
+	
+.pink {
+    color: #E77B95;
+}
 	
 /* =Header
 ----------------------------------------------- */
+#branding img {
+    margin-top:2em;
+	height: auto;
+	margin-bottom: -50px;
+	width: 100%;
+}
+
 #site-title a {
+    position: absolute;
+	top: 1em;
 	color: #111;
-	font-family:OrbitronMedium,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 40px;
-	font-weight: medium;
+	font-family:Chunk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 50px;
+	font-weight: heavy;
 	line-height: 46px;
-	text-shadow: 2px 2px 2px LightSteelBlue;
+/*	text-shadow: 2px 2px 2px DarkSeaGreen;*/
     text-decoration: none;
 }
 
 #site-description {
+    position: absolute;
+    top: 6.5em;
 	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 2.427em 0;
+	font-size: 15px;
+	margin: 0 0 0 0;
+}
+
+/* Search Form */
+#branding #searchform {
+	position: absolute;
+	top: 9em;
+	left: 7.6%;
+	text-align: left;
+}
+
+#branding #s {
+	float: left;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	-o-transition-duration: 400ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	width: 72px;
 }
 
 /* =Content
@@ -74,7 +111,6 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	line-height: 2.6em;
 	text-transform: uppercase;
 }
-
 
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
