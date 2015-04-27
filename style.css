@@ -19,12 +19,11 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 
 @font-face {
 	font-family: 'Chunk';
-	src: url('./fonts/Chunk/Chunkfive-webfont.eot');
+	src: url('./fonts/Chunk/Chunkfive-webfont.eot'); /* IE9 Compat Modes */
 	src: url('./fonts/Chunk/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('./fonts/Chunk/Chunk.otf') format('opentype'),
-	     url('./fonts/Chunk/Chunkfive-webfont.woff') format('woff'),
+	     url('./fonts/Chunk/Chunkfive-webfont.woff') format('woff'), /* Pretty modern browsers */
 	     url('./fonts/Chunk/Chunkfive-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('./fonts/Chunk/Chunkfive-webfont.svg#Chunk') format('svg');
+	     url('./fonts/Chunk/Chunkfive-webfont.svg#Chunk') format('svg'); /* Legacy iOS */
 	}
 	
 .pink {
