@@ -142,3 +142,11 @@ blockquote.pull {
 	margin: 0 0 1.625em;
 	text-align: center;
 }
+
+/* Stop images from looking squished on mobile */
+img, iframe {
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+}
