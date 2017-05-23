@@ -59,14 +59,6 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	margin: 0 0 0 0;
 }
 
-/* Search Form */
-#branding #searchform {
-	position: absolute;
-	top: 9em;
-	left: 7.6%;
-	text-align: left;
-}
-
 #branding #s {
 	float: left;
 	-webkit-transition-duration: 400ms;
@@ -79,6 +71,27 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	-o-transition-property: width, background;
 	-o-transition-timing-function: ease;
 	width: 72px;
+}
+
+/* Fix logo in mobile site */
+@media screen and (max-width: 850px) {
+	#site-title, #site-description {
+		width: 100%;
+	}
+	#branding #searchform {
+		top: 1em;
+	}
+	#branding hgroup {
+		margin-top: 60px;
+	}
+}
+@media screen and (max-width: 525px) {
+	#site-title a {
+		font-size: 22px;
+	}
+	#site-description {
+		font-size: 18px;
+	}
 }
 
 /* =Content
