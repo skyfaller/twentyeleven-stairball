@@ -32,7 +32,7 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript" src="/wp-content/themes/twentyeleven-skyfaller/retina.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentyeleven-stairball/retina.min.js"></script>
 </body>
 </html>
 
