@@ -108,4 +108,4 @@
 	</header><!-- #branding -->
 
 
-	<div id="main">
+	<main id="main">

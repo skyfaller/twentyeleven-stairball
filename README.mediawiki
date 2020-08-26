@@ -1,7 +1,0 @@
-== README ==
-This is a [https://developer.wordpress.org/themes/advanced-topics/child-themes/ child theme] of the Wordpress theme [https://wordpress.com/theme/twentyeleven Twenty Eleven]. It was originally created for [http://www.skyfaller.space Nelson's homepage], then modified for [http://www.stairball.club/ Stairball.club]. 
-
-=== Font ===
-I use @font-face (more specifically, the [http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax Fontspring method]) to import a font from [http://www.theleagueofmoveabletype.com/ The League of Moveable Type], specifically [https://www.theleagueofmoveabletype.com/chunk Chunk], to use in the header.
-
-Maybe I should use Google Web Fonts instead, but I hate relying on Google for everything.

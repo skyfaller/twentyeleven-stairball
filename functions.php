@@ -20,13 +20,6 @@ function twentyeleven_posted_on() {
 }
 endif;
 
-// necessary to make HTML5 validate - eliminates unnecessary rel attribute link
-// UPDATE: no longer necessary for validation, also probably should be inside a function
-// remove_action('wp_head', 'rsd_link');
-
-//Try killing the auto-adding of <p> tags. Edit the post to see the difference.
-//remove_filter ('the_content', 'wpautop');
-
 // add theme support for HTML5
 function twentyeleven_add_html5_support() {
 	add_theme_support(
