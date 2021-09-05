@@ -60,15 +60,9 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 
 #branding #s {
 	float: left;
-	-webkit-transition-duration: 400ms;
-	-webkit-transition-property: width, background;
-	-webkit-transition-timing-function: ease;
-	-moz-transition-duration: 400ms;
-	-moz-transition-property: width, background;
-	-moz-transition-timing-function: ease;
-	-o-transition-duration: 400ms;
-	-o-transition-property: width, background;
-	-o-transition-timing-function: ease;
+	transition-duration: 400ms;
+	transition-property: width, background;
+	transition-timing-function: ease;
 	width: 72px;
 }
 
