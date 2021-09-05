@@ -30,5 +30,3 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
-<script src=/wp-content/themes/twentyeleven-stairball/retina.min.js></script>
