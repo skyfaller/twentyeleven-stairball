@@ -3,7 +3,7 @@ Theme Name:     Twenty Eleven Stairball
 Theme URI:      https://www.stairball.club
 Description:    Child theme of Twenty Eleven for Stairball.club
 Author:         Nelson Pavlosky
-Author URI:     http://skyfaller.space
+Author URI:     https://www.skyfaller.space
 Template:       twentyeleven
 Version:        0.0.1
 */
@@ -21,26 +21,25 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	font-family: 'Chunk';
 	src: url('./fonts/Chunk/Chunkfive-webfont.eot'); /* IE9 Compat Modes */
 	src: url('./fonts/Chunk/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('./fonts/Chunk/Chunkfive-webfont.woff') format('woff'), /* Pretty modern browsers */
-	     url('./fonts/Chunk/Chunkfive-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('./fonts/Chunk/Chunkfive-webfont.svg#Chunk') format('svg'); /* Legacy iOS */
+		url('./fonts/Chunk/Chunkfive-webfont.woff') format('woff'), /* Pretty modern browsers */
+		url('./fonts/Chunk/Chunkfive-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/Chunk/Chunkfive-webfont.svg#Chunk') format('svg'); /* Legacy iOS */
 	}
 	
 .pink {
-    color: #E77B95;
+	color: #E77B95;
 }
 	
-/* =Header
------------------------------------------------ */
+/* Header */
 #branding img {
-    margin-top:2em;
+	margin-top:2em;
 	height: auto;
 	margin-bottom: -50px;
 	width: 100%;
 }
 
 #site-title a {
-    position: absolute;
+	position: absolute;
 	top: 1em;
 	color: #111;
 	font-family:Chunk,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -48,12 +47,12 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	font-weight: 800;
 	line-height: 46px;
 /*	text-shadow: 2px 2px 2px DarkSeaGreen;*/
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #site-description {
-    position: absolute;
-    top: 6.5em;
+	position: absolute;
+	top: 6.5em;
 	color: #7a7a7a;
 	font-size: 15px;
 	margin: 0 0 0 0;
@@ -94,8 +93,7 @@ http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
 	}
 }
 
-/* =Content
------------------------------------------------ */ 
+/* Content */ 
 .entry-content td,
 .comment-content td {
 	border:none;
