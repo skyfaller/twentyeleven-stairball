@@ -59,8 +59,6 @@
 			// Check to see if the header image has been removed
 			$header_image = get_header_image();
 			$image_2x = preg_replace('/.png/', '@2x.png', $header_image);
-			$blog_info_name = get_bloginfo( 'name' );
-			$name_pinked = preg_replace('/\./', '<span class=pink>.</span>', $blog_info_name);
 			if ( ! empty( $header_image ) ) :
 		?>
 		<a href=<?php echo esc_url( home_url( '/' ) ); ?>>
@@ -80,7 +78,8 @@
 		<?php endif; // end check for removed header image ?>
 
 		<hgroup>
-      <h1 id=site-title><span><a href=<?php echo esc_url( home_url( '/' ) ); ?> rel=home><?php echo $name_pinked; ?></a></span></h1>
+			<?php $name_pinked = preg_replace('/\./', '<span class=pink>.</span>', get_bloginfo( 'name' )); ?>
+			<h1 id=site-title><span><a href=<?php echo esc_url( home_url( '/' ) ); ?> rel=home><?php echo $name_pinked; ?></a></span></h1>
 			<h2 id=site-description><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 
