@@ -14,14 +14,12 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+<div id=content>
 
-				<?php the_post(); ?>
+	<?php the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+	<?php get_template_part( 'content', 'page' ); ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+</div><!-- #content -->
 
 <?php get_footer(); ?>
