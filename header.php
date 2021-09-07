@@ -72,7 +72,7 @@
 					// Houston, we have a new header image!
 					echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
 				else : ?>
-				<img srcset="<?php echo esc_url( $image_2x ); ?> 2x" src=<?php header_image(); ?> width=<?php echo HEADER_IMAGE_WIDTH; ?> height=<?php echo HEADER_IMAGE_HEIGHT; ?> alt="">
+				<img srcset="<?php header_image(); ?> 1000w, <?php echo esc_url( $image_2x ); ?> 2000w" src=<?php header_image(); ?> width=<?php echo HEADER_IMAGE_WIDTH; ?> height=<?php echo HEADER_IMAGE_HEIGHT; ?> alt="">
 			<?php endif; // end check for featured image or standard header ?>
 		</a>
 		<?php endif; // end check for removed header image ?>
