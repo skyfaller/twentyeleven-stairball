@@ -99,3 +99,30 @@ img, iframe {
 	max-width: 100%;
 	width: auto;
 }
+
+/* Numbering for nested rule lists */
+.rule-list ol {
+	counter-reset: rules;
+}
+.rule-list li {
+	counter-increment: rules;
+	list-style: none;
+	font-weight: bold;
+}
+.rule-list li li {
+	font-weight: initial;
+}
+
+.rule-list li::marker {
+	font-weight: bold;
+	content: counters(rules, '.') '. ';
+}
+/* Don't apply to Webkit which doesn't support ::marker content */
+@supports (-webkit-hyphens: auto) {
+	.rule-list li::before {
+		content: counters(rules, '.') '. ';
+		color: #E77B95;
+		font-weight: bold;
+		margin-left: -2em;
+	}
+}
