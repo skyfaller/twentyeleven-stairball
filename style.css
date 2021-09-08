@@ -48,13 +48,6 @@ body, input, textarea {
 	font-size: 1.1em;
 }
 
-#main {
-	padding-top: 1vmin;
-}
-#secondary {
-	padding-top: 1.5vmin;
-}
-
 /* Fix logo in mobile site */
 @media screen and (max-width: 34em) {
 	#branding img {
@@ -68,6 +61,31 @@ body, input, textarea {
 		margin-bottom: 3vmin;
 		position: static;
 	}
+}
+
+#main {
+	padding-top: 1.5vmin;
+}
+#secondary {
+	padding-top: 1.5vmin;
+}
+
+/* Content */
+.entry-title {
+	padding: 1vmin 0 1vmin;
+	line-height: 1.45em;
+}
+
+.entry-content h3,
+.comment-content h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+/* Singular content styles for Posts and Pages */
+.singular .hentry {
+	padding: unset;
 }
 
 /* Stop images from looking squished on mobile */
