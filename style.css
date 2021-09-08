@@ -20,110 +20,54 @@ Version:        0.0.1
 
 .pink {
 	color: #E77B95;
-	-webkit-text-stroke: 1px #111;
+	-webkit-text-stroke: 1.5px #111;
+}
+
+body, input, textarea {
+	font-weight: normal;
 }
 
 /* Header */
 #branding img {
-	margin-top:2em;
-	height: auto;
-	margin-bottom: -50px;
+	margin-top: 2em;
+	margin-bottom: -3rem;
 	width: 100%;
 }
 
 #site-title a {
 	position: absolute;
 	top: 1em;
-	color: #111;
-	font-family:Chunk,Inter,Open Sans,-apple-system,Fira Sans,Ubuntu,Roboto,system-ui,sans-serif;
-	font-size: 50px;
-	font-weight: 800;
-	line-height: 46px;
+	font-family:Chunk,"FiraGO Heavy","Fira Sans Heavy","Inter Black","Noto Sans Blk",system-ui,sans-serif;
+	font-size: 3.5em;
+	font-weight: normal;
 }
 
 #site-description {
 	position: absolute;
-	top: 6.5em;
-	color: #7a7a7a;
-	font-size: 15px;
-	margin: 0 0 0 0;
+	top: 6em;
+	font-size: 1.1em;
 }
 
-#branding #s {
-	float: left;
-	transition-duration: 400ms;
-	transition-property: width, background;
-	transition-timing-function: ease;
-	width: 72px;
+#main {
+	padding-top: 1vmin;
+}
+#secondary {
+	padding-top: 1.5vmin;
 }
 
 /* Fix logo in mobile site */
-@media screen and (max-width: 850px) {
-	#site-title, #site-description {
-		width: 100%;
+@media screen and (max-width: 34em) {
+	#branding img {
+		margin-bottom:-5em;
 	}
-	#branding #searchform {
-		top: 1em;
-	}
-	#branding hgroup {
-		margin-top: 60px;
-	}
-}
-@media screen and (max-width: 525px) {
 	#site-title a {
-		font-size: 22px;
+		top: 3vw;
+		font-size: 2.5em;
 	}
 	#site-description {
-		font-size: 18px;
+		margin-bottom: 3vmin;
+		position: static;
 	}
-}
-
-/* Content */
-.entry-content td,
-.comment-content td {
-	border:none;
-	padding: 6px 10px 6px 0;
-}
-
-.entry-content h1,
-.entry-content h2,
-.comment-content h1,
-.comment-content h2 {
-	font-size: 19px;
-	font-weight: bold;
-	margin: 0 0 .8125em;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	text-transform: uppercase;
-
-}
-
-.entry-content h3,
-.comment-content h3 {
-	font-size: 15px;
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	text-transform: uppercase;
-}
-
-/* Singular content styles for Posts and Pages */
-.singular .hentry {
-	border-bottom: none;
-	padding: 2.831em 0 0;
-	position: relative;
-}
-
-.singular.page .hentry {
-	padding: 3.236em 0 0;
-}
-
-blockquote.pull {
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.6125em;
-	margin: 0 0 1.625em;
-	text-align: center;
 }
 
 /* Stop images from looking squished on mobile */
