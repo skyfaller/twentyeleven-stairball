@@ -76,6 +76,10 @@ body, input, textarea {
 	line-height: 1.45em;
 }
 
+.entry-header .comments-link a {
+	top: 3em;
+}
+
 .entry-content h3,
 .comment-content h3 {
 	font-size: 1.1em;
