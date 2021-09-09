@@ -65,19 +65,39 @@ textarea {
 	}
 }
 
+/* Content */
 #main,
 #secondary {
 	padding-top: 1.5vmin;
 }
+/* Singular content styles for Posts and Pages */
+.singular.page #main {
+	padding-top: .5vmin;
+}
+.singular .entry-title {
+	line-height: 1.33;
+	padding-top: 0;
+}
+/* keep edit button aligned with headline */
+.singular .entry-meta .edit-link a {
+	top: 65px;
+}
+@media (max-width: 800px) {
+	.singular .entry-meta .edit-link a {
+		top: 27px;
+	}
+}
 
-/* Content */
 .entry-title {
 	line-height: 1.45;
 	padding: 1vmin 0 1vmin;
 }
 
+/* Keep comments bubble from clashing with headlines */
 .entry-header .comments-link a {
-	top: 3em;
+	position: unset;
+	float: right;
+	margin-top: -2em;
 }
 
 .entry-content h3,
@@ -85,6 +105,11 @@ textarea {
 	line-height: 1.5;
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+/* fix misaligned buttons on comment form */
+#respond label {
+	top: unset !important;
 }
 
 /* Singular content styles for Posts and Pages */
