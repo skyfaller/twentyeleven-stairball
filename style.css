@@ -23,7 +23,9 @@ Version:        0.0.1
 	-webkit-text-stroke: 1.5px #111;
 }
 
-body, input, textarea {
+body,
+input,
+textarea {
 	font-weight: normal;
 }
 
@@ -63,9 +65,7 @@ body, input, textarea {
 	}
 }
 
-#main {
-	padding-top: 1.5vmin;
-}
+#main,
 #secondary {
 	padding-top: 1.5vmin;
 }
@@ -93,7 +93,8 @@ body, input, textarea {
 }
 
 /* Stop images from looking squished on mobile */
-img, iframe {
+img,
+iframe {
 	height: auto;
 	max-height: 100%;
 	max-width: 100%;
