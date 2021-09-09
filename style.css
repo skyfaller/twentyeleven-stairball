@@ -35,17 +35,17 @@ body, input, textarea {
 }
 
 #site-title a {
-	position: absolute;
-	top: 1em;
 	font-family:Chunk,"FiraGO Heavy","Fira Sans Heavy","Inter Black","Noto Sans Blk",system-ui,sans-serif;
 	font-size: 3.5em;
 	font-weight: normal;
+	position: absolute;
+	top: 1em;
 }
 
 #site-description {
+	font-size: 1.1em;
 	position: absolute;
 	top: 6em;
-	font-size: 1.1em;
 }
 
 /* Fix logo in mobile site */
@@ -72,8 +72,8 @@ body, input, textarea {
 
 /* Content */
 .entry-title {
+	line-height: 1.45;
 	padding: 1vmin 0 1vmin;
-	line-height: 1.45em;
 }
 
 .entry-header .comments-link a {
@@ -82,9 +82,9 @@ body, input, textarea {
 
 .entry-content h3,
 .comment-content h3 {
+	line-height: 1.5;
 	font-size: 1.1em;
 	font-weight: bold;
-	line-height: 1.5em;
 }
 
 /* Singular content styles for Posts and Pages */
@@ -106,16 +106,16 @@ img, iframe {
 }
 .rule-list li {
 	counter-increment: rules;
-	list-style: none;
 	font-weight: bold;
+	list-style: none;
 }
 .rule-list li li {
 	font-weight: initial;
 }
 
 .rule-list li::marker {
-	font-weight: bold;
 	content: counters(rules, '.') '. ';
+	font-weight: bold;
 }
 /* Don't apply to Webkit which doesn't support ::marker content */
 @supports (-webkit-hyphens: auto) {
