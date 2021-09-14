@@ -133,7 +133,6 @@ iframe {
 .rule-list li {
 	counter-increment: rules;
 	font-weight: bold;
-	list-style: none;
 }
 .rule-list li li {
 	font-weight: initial;
@@ -145,6 +144,9 @@ iframe {
 }
 /* Don't apply to Webkit which doesn't support ::marker content */
 @supports (-webkit-hyphens: auto) {
+	.rule-list li {
+		list-style: none;
+	}
 	.rule-list li::before {
 		content: counters(rules, '.') '. ';
 		color: #E77B95;
