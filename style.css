@@ -93,23 +93,11 @@ textarea {
 	padding: 1vmin 0 1vmin;
 }
 
-/* Keep comments bubble from clashing with headlines */
-.entry-header .comments-link a {
-	position: unset;
-	float: right;
-	margin-top: -2em;
-}
-
 .entry-content h3,
 .comment-content h3 {
 	line-height: 1.5;
 	font-size: 1.1em;
 	font-weight: bold;
-}
-
-/* fix misaligned buttons on comment form */
-#respond label {
-	top: unset !important;
 }
 
 /* Singular content styles for Posts and Pages */
